@@ -1,0 +1,217 @@
+/* Profile Container - matches login aesthetic */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Profile Title */
+.profile-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Profile Card - Glass effect */
+.profile-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Profile Info */
+.profile-info {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Profile Form - matches login styling */
+.profile-form {
+    width: 100%;
+}
+
+/* Input Fields */
+.profile-form .MuiOutlinedInput-root {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.profile-form .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+}
+
+.profile-form .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-form .MuiOutlinedInput-input {
+    color: white;
+}
+
+.profile-form .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.profile-form .Mui-focused .MuiInputLabel-root {
+    color: white;
+}
+
+/* Date Picker */
+.profile-form .MuiTextField-root input[type="date"] {
+    color: white;
+}
+
+.profile-form .MuiTextField-root input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* Buttons */
+.profile-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #1e3a8a !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    text-transform: none;
+}
+
+.profile-button:hover {
+    background: #f0f0f0 !important;
+    transform: translateY(-2px);
+}
+
+.profile-button:active {
+    transform: translateY(0);
+}
+
+.profile-button:disabled {
+    background: #ccc !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Danger Button */
+.profile-button-danger {
+    background: #ff6b6b !important;
+    color: white !important;
+}
+
+.profile-button-danger:hover {
+    background: #e63946 !important;
+}
+
+/* Dialogs */
+.profile-dialog .MuiDialog-paper {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.profile-dialog .MuiDialogTitle-root {
+    font-weight: bold;
+}
+
+/* Snackbar */
+.profile-snackbar .MuiAlert-root {
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+}
+
+/* Dialogs */
+.profile-dialog .MuiDialog-paper {
+    background: rgba(0, 0, 0, 0.7);
+    /* Darker background for contrast */
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px;
+    /* Add some padding for better spacing */
+    border-radius: 8px;
+}
+
+/* Dialog Title */
+.profile-dialog .MuiDialogTitle-root {
+    font-weight: bold;
+    color: white;
+    /* Ensure the title text is visible */
+}
+
+/* Dialog Content */
+.profile-dialog .MuiDialogContent-root {
+    color: white;
+    /* Ensure the content text is white for contrast */
+}
+
+/* Dialog Actions */
+.profile-dialog .MuiDialogActions-root {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    /* Ensure buttons have visible text */
+}
+
+/* Input Fields in the Dialog */
+.profile-dialog .MuiOutlinedInput-root {
+    background: rgba(255, 255, 255, 0.1);
+    /* Slightly transparent background for input fields */
+    color: white;
+    border-radius: 8px;
+}
+
+.profile-dialog .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+}
+
+.profile-dialog .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-dialog .MuiOutlinedInput-input {
+    color: white;
+}
+
+.profile-dialog .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.profile-dialog .Mui-focused .MuiInputLabel-root {
+    color: white;
+}
+
+.profile-dialog .MuiTextField-root input[type="date"] {
+    color: white;
+}
+
+/* Buttons in Dialog */
+.profile-dialog .MuiButton-root {
+    background: white;
+    color: #1e3a8a;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.profile-dialog .MuiButton-root:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.profile-dialog .MuiButton-root:active {
+    transform: translateY(0);
+}

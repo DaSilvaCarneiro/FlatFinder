@@ -1,0 +1,301 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.NavBar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  background-color: #333;
+}
+
+.loading {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+.city-icon {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.flat-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Adjust column width as needed */
+  gap: 20px;
+  /* Space between cards */
+  padding: 20px;
+  align-items: stretch;
+  /* Ensures all cards stretch to the same height */
+}
+
+.flat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Ensures content is spaced properly */
+  background-color: #4c4c4c;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  min-height: 300px;
+  /* Set a consistent minimum height */
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.flat-card:hover {
+  transform: translateY(-5px);
+}
+
+.flat-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.flat-card p {
+  margin: 5px 0;
+}
+
+.flat-card img {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+
+.favorite-button {
+  margin-top: auto;
+  padding: 10px 15px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+  text-align: center;
+  width: 100%;
+}
+
+.favorite-button:focus {
+  outline: none;
+}
+
+.favorite-button:hover {
+  background: linear-gradient(45deg, #1E3A8A, #3B82F6);
+  color: white;
+
+}
+
+.favorites-page {
+  padding: 20px;
+}
+
+.favorites-page .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.favorites-page .flat-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.favorites-page .flat-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-page .flat-card h2 {
+  margin: 0 0 10px;
+}
+
+.favorites-page .flat-card p {
+  margin: 5px 0;
+}
+
+.favorites-link-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.favorites-link-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sort-container {
+  margin: 20px 0;
+  padding-right: 30px;
+  /* Add padding to the right */
+  text-align: right;
+  /* Keep the text aligned to the right */
+}
+
+
+.sort-container label {
+  margin-right: 10px;
+}
+
+.sort-container select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Styles for the action buttons (Edit and Delete) */
+.action-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  /* Space between buttons */
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: white;
+  /* Ensure icons are visible */
+}
+
+.action-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Light hover effect */
+}
+
+.delete-account-button {
+  margin-top: 20px;
+  background-color: #f44336;
+  /* Red color for delete button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-account-button:hover {
+  background-color: #d32f2f;
+  /* Darker red on hover */
+}
+
+.edit-button {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  /* Green color for edit button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+.save-button {
+  margin-top: 20px;
+  background-color: #2196F3;
+  /* Blue color for save button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #1976D2;
+  /* Darker blue on hover */
+}
+
+.cancel-button {
+  margin-top: 20px;
+  background-color: #f44336;
+  /* Red color for cancel button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+  /* Darker red on hover */
+}

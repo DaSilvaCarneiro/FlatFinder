@@ -1,0 +1,123 @@
+/* Login Container - matches signup container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Login Title - matches signup title */
+.login-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Login Form - matches signup form glass effect */
+.login-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form Group - matches signup spacing */
+.login-form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Input fields styling to match signup */
+.login-form-group .MuiOutlinedInput-root {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.login-form-group .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+}
+
+.login-form-group .MuiInputLabel-root {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-form-group .MuiOutlinedInput-input {
+    color: white;
+}
+
+.login-form-group .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.login-form-group .Mui-focused .MuiInputLabel-root {
+    color: white;
+}
+
+/* Date picker specific styles if needed */
+.login-form-group .MuiTextField-root input[type="date"] {
+    color: white;
+}
+
+.login-form-group .MuiTextField-root input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* Error message - matches signup */
+.login-error-message {
+    color: #ff6b6b;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Success message - matches signup */
+.login-success-message {
+    color: #28a745;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Button - identical to signup */
+.login-submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #1e3a8a !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    text-transform: none;
+}
+
+.login-submit-button:hover {
+    background: #f0f0f0 !important;
+    transform: translateY(-2px);
+}
+
+.login-submit-button:active {
+    transform: translateY(0);
+}
+
+.login-submit-button:disabled {
+    background: #ccc !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Loading spinner - matches signup */
+.login-submit-button .MuiCircularProgress-root {
+    color: #1e3a8a;
+}

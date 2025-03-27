@@ -1,0 +1,154 @@
+/* AdminPage.css */
+.admin-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 20px;
+}
+
+.admin-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 0;
+}
+
+.card-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flat-item,
+.user-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flat-actions,
+.user-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.button {
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.button.primary {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.button.primary:hover {
+    background: var(--primary-hover);
+}
+
+.button.secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+
+.button.secondary:hover {
+    background: var(--secondary-color);
+}
+
+.button.delete {
+    background: transparent;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+}
+
+.button.delete:hover {
+    background: rgba(211, 47, 47, 0.04);
+}
+
+.button:disabled {
+    background: var(--disabled-color);
+    color: var(--disabled-text);
+    cursor: not-allowed;
+}
+
+.edit-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    background: var(--card-background);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.text-field {
+    background: var(--background-color);
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+.text-field label {
+    color: var(--text-color);
+}
+
+.text-field .MuiOutlinedInput-root {
+    color: var(--text-color);
+}
+
+.text-field .MuiOutlinedInput-notchedOutline {
+    border-color: var(--border-color);
+}
+
+.dialog {
+    color: var(--text-color);
+}
+
+.dialog .MuiPaper-root {
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+/* Include your root variables */
+:root {
+    --primary-color: #4474CF;
+    --primary-hover: #3A68B5;
+    --secondary-color: #E0E8F9;
+    --text-color: #FFFFFF;
+    --background-color: #1A1A1A;
+    --card-background: #242424;
+    --border-color: #4474CF;
+    --disabled-color: #D3D3D3;
+    --disabled-text: #8A8A8A;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}

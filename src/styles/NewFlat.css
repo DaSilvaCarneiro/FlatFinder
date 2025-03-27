@@ -1,0 +1,103 @@
+.new-flat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    /* Ensure text is centered */
+}
+
+.new-flat-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.new-flat-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    /* Reduced padding to avoid pushing content too far */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center form contents horizontally */
+}
+
+.form-group {
+    width: 100%;
+    /* Ensure form groups take full width */
+    margin-bottom: 20px;
+    text-align: left;
+    /* Align labels and inputs to the left */
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.form-group input {
+    width: calc(100% - 24px);
+    /* Adjust width to account for padding */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #1e3a8a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    text-align: left;
+    /* Align error messages to the left */
+}
+
+.submit-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
